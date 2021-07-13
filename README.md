@@ -1,3 +1,3 @@
 # PlagueRunner
 
-<img src="https://github.com/TobiasM2000/PlagueRunner/tree/main/Pictures/WIP.png" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/TobiasM2000/PlagueRunner/main/Pictures/WIP.png" width="100%" height="100%">
