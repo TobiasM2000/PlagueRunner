@@ -3,27 +3,138 @@
     <head>
 	    <meta charset="utf-8" />
 	    <title>Plague Runner</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <script src="JS/mainPageFunctions.js"></script>
     </head>
 
     <body>
-        <center>
+            <!-- Main Menue-->
+            <div id="mainMenuHTML">
 
-            <div id="mainmenuHTML" class="box">
+            <h1>Plague Runner</h1>
 
-                <img   
-                src="assets/Images/Buttons/index2.jpg" 
-                onclick="openNewPage('level1HTML','mainmenuHTML')";
-                onmouseout="src='assets/Images/Buttons/index2.jpg'"
-                onmouseover="src='assets/Images/Buttons/index.jpg'">    
+            <br>
 
-                <br> <br>
+            <img
+            class="LevelButtonStyle"
+            src="assets/Images/Buttons/TestBG.jpg"
+            onclick="openNewPage('Story1_1','mainMenuHTML')";
+            onmouseout="src='assets/Images/Buttons/TestBG.jpg'"
+            onmouseover="src='assets/Images/Buttons/TestBG.jpg'">   
+
+            <br>
+
+            <img
+            class="LevelButtonStyle"
+            src="assets/Images/Buttons/TestBG.jpg"
+            onclick="openNewPage('Level1','mainMenuHTML')";
+            onmouseout="src='assets/Images/Buttons/TestBG.jpg'"
+            onmouseover="src='assets/Images/Buttons/TestBG.jpg'"> 
+
+            <br>
+
+            <img
+            class="LevelButtonStyle"
+            src="assets/Images/Buttons/TestBG.jpg"
+            onclick="openNewPage('Level2','mainMenuHTML')";
+            onmouseout="src='assets/Images/Buttons/TestBG.jpg'"
+            onmouseover="src='assets/Images/Buttons/TestBG.jpg'"> 
+
+            <br>
+
+            <img
+            class="LevelButtonStyle"
+            src="assets/Images/Buttons/TestBG.jpg"
+            onclick="openNewPage('Level3','mainMenuHTML')";
+            onmouseout="src='assets/Images/Buttons/TestBG.jpg'"
+            onmouseover="src='assets/Images/Buttons/TestBG.jpg'"> 
+
+            <br>
+
+            <img
+            class="LevelButtonStyle"
+            src="assets/Images/Buttons/TestBG.jpg"
+            onclick="openNewPage('Story2_1','mainMenuHTML')";
+            onmouseout="src='assets/Images/Buttons/TestBG.jpg'"
+            onmouseover="src='assets/Images/Buttons/TestBG.jpg'">  
+
+            </div>
+            <!-- End Main Menue-->
+
+
+            <!-- Storyline -->
+            <div id="Story1_1" style="display: none;">
+                <h1>Story 1.1</h1>
+                
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/document-2.png"
+                onclick="openNewPage('Story1_2','Story1_1')";
+                onmouseout="src='assets/Images/Buttons/document-2.png'"
+                onmouseover="src='assets/Images/Buttons/document.png'">
+
             </div>
 
-            <div id="level1HTML" class="box" style="display: none;">
-                Hier ist Level 1
+            <div id="Story1_2" style="display: none;">
+                <h1>Story 1.2</h1>
+                
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/document-2.png"
+                onclick="openNewPage('Story1_3','Story1_2')";
+                onmouseout="src='assets/Images/Buttons/document-2.png'"
+                onmouseover="src='assets/Images/Buttons/document.png'">
             </div>
-        </center>
+
+            <div id="Story1_3" style="display: none;">
+                <h1>Story 1.3</h1>
+                
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/document-2.png"
+                onclick="openNewPage('mainMenuHTML','Story1_3')";
+                onmouseout="src='assets/Images/Buttons/document-2.png'"
+                onmouseover="src='assets/Images/Buttons/document.png'">
+            </div>
+
+            <div id="Story2_1" style="display: none;">
+                <h1>Story 2.1</h1>
+                
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/document-2.png"
+                onclick="openNewPage('Story2_2','Story2_1')";
+                onmouseout="src='assets/Images/Buttons/document-2.png'"
+                onmouseover="src='assets/Images/Buttons/document.png'">
+            </div>
+
+            <div id="Story2_2" style="display: none;">
+                <h1>Story 2.2</h1>
+                
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/document-2.png"
+                onclick="openNewPage('mainMenuHTML','Story2_2')";
+                onmouseout="src='assets/Images/Buttons/document-2.png'"
+                onmouseover="src='assets/Images/Buttons/document.png'">
+            </div>
+            <!-- End Storyline -->
+
+
+            <!-- Level -->
+            <div id="Level1" style="display: none;">
+                Level1
+            </div>
+
+            <div id="Level2" style="display: none;">
+                Level2
+            </div>
+
+            <div id="Level3" style="display: none;">
+                Level3
+            </div>
+            <!-- Level -->
+
     </body>
 </html>
