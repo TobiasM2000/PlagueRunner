@@ -1,0 +1,61 @@
+/* Styles */
+
+.OpenNewPageImgStyle {
+    position: absolute;
+    height: 10%;
+    right: 5%;
+    bottom: 5%;
+}
+
+.LevelButtonStyle {
+    position: relative;
+    width: 30%;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.MuteButton{
+    position: absolute;
+    width: 4%;
+    right: 0%;
+    top: 0%;
+}
+
+.SoundsButton{
+    position: absolute;
+    width: 4%;
+    right: 4%;
+    top: 0%;
+}
+/* Aimations */
+
+:root{
+    --pixel-size: 200;
+}
+.MenuCharacter {
+    position: absolute;
+    width: calc(0.2% * var(--pixel-size));
+    height: calc(0.5% * var(--pixel-size));
+    overflow: hidden;
+    right: 10%;
+    bottom: 5%;
+    
+}
+
+.MenuCharacterSpritesheet{
+    animation: moveSpritesheet 5s steps(28) infinite;
+    width: calc(15% * var(--pixel-size));
+}
+
+.pixelart{
+    image-rendering: pixelated;
+}
+
+@keyframes moveSpritesheet {
+    from {
+        transform: translate3d(0px, 0, 0);
+    }
+    to{
+        transform: translate3d(-100%, 0, 0);
+    }
+}
