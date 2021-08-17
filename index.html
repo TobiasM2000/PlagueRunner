@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html onclick="jump()">
     <head>
 	    <meta charset="utf-8" />
 	    <title>Plague Runner</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-        <link rel="stylesheet" type="text/css" href="CSS/spritesheet.css">
-        <script src="JS/mainPageFunctions.js"></script>        
+        <link rel="stylesheet" type="text/css" href="CSS/SpritesheetMain.css">
+        <link rel="stylesheet" type="text/css" href="CSS/SpritesgeetLevel1.css">
+        <script src="JS/MainPageFunctions.js"></script>   
+        <script src="JS/Level1Function.js"></script>     
     </head>
 
     <body>
             <!-- Main Menue-->
-            <div id="mainMenuHTML">
+            <div id="mainMenuHTML" style="display: none;">
 
             <div>
                 <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
@@ -190,8 +192,9 @@
 
 
             <!-- Level -->
-            <div id="Level1" style="display: none;">
-                Level1
+            <div id="Level1">
+                <div id="Character"></div>
+                <div id="Zombie"></div>
             </div>
 
             <div id="Level2" style="display: none;">
