@@ -4,17 +4,20 @@
 }
 
 #Level1{
-    width: 500px;
-    height: 200px;
+    position: absolute;
+    margin: 1px;
+    width: 99.5%;
+    height: 99.5%;
     border: 1px solid black;
 }
 
 #Character{
     width: 20px;
     height: 50px;
-    background-color: red;
-    position: relative;
-    top: 150px;
+    background: red;
+    position: absolute;
+    top: 70%;
+    left: 15%;
 }
 .animate{
     animation: jump 500ms;
@@ -25,8 +28,8 @@
     height: 20px;
     background-color: greenyellow;
     position: relative;
-    top: 130px;
-    left: 480px;
+    top: 500px;
+    left: 1000px;
     animation: ZombieMovement 1s infinite linear;
 }
 
@@ -36,10 +39,38 @@
 }
 
 @keyframes jump {
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+    0%{top: 70%;}
+    30%{top: 65%;}
+    70%{top: 50%;}
+    100%{top: 45%;}
+}
+
+:root{
+    --pixel-size: 220;
+}
+.MainCharakterMove {
+    position: absolute;
+    width: calc(0.2% * var(--pixel-size));
+    height: calc(0.4% * var(--pixel-size));
+    overflow: hidden;
+    right: 10%;
+    bottom: 11%;
+    image-rendering: pixelated;
+}
+
+.MainCharacterMoveSpritesheet{
+    animation: moveSpritesheet 10s steps(40) infinite;
+    width: calc(17% * var(--pixel-size));
+    image-rendering: pixelated;
+}
+
+@keyframes moveSpritesheet {
+    from {
+        transform: translate3d(0px, 0, 0);
+    }
+    to{
+        transform: translate3d(-100%, 0, 0);
+    }
 }
 
 
