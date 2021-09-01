@@ -3,10 +3,18 @@
     margin: 0;
 }
 
-#Lvl1Background{
-    position: absolute;
-    top: 30%;
+.Lvl1Background{
+    width: 500%;
     image-rendering: pixelated;
+    animation: moveSpritesheet 35s steps(100000);
+}
+
+#Lvl1BackgroundDiv{
+    position: absolute;
+    image-rendering: pixelated;
+    height: 100%;
+    width: 100%;   
+    overflow: hidden;
 }
 
 .animate{
