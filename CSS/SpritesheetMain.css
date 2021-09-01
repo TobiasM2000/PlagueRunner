@@ -57,6 +57,11 @@
     top: 50%;
     left: 3%;
 }
+.StroryText4{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
 .CharacterStandStyle{
     position: absolute;
     image-rendering: pixelated;
@@ -74,30 +79,30 @@
 /* Aimations */
 
 :root{
-    --pixel-size: 220;
+    --pixel-size: 270;
     --pixel-size2: 50;
     --pixel-size3: 120;
+    --pixel-size4: 200;
 }
 .MenuCharacter {
     position: absolute;
-    width: calc(0.2% * var(--pixel-size));
-    height: calc(0.4% * var(--pixel-size));
+    width: calc(0.3% * var(--pixel-size));
+    height: calc(0.54% * var(--pixel-size));
     overflow: hidden;
     right: 10%;
-    bottom: 11%;
+    bottom: 20%;
     image-rendering: pixelated;
 }
 
 .MenuCharacterSpritesheet{
     animation: moveSpritesheet 10s steps(40) infinite;
-    width: calc(17% * var(--pixel-size));
-    image-rendering: pixelated;
+    width: calc(27% * var(--pixel-size));
 }
 
 .StoryCharacterHead {
     position: absolute;
-    width: calc(0.4% * var(--pixel-size2));
-    height: calc(1% * var(--pixel-size2));
+    width: calc(0.07% * var(--pixel-size2));
+    height: calc(0.2% * var(--pixel-size2));
     overflow: hidden;
     right: 10%;
     bottom: 18%;
@@ -105,8 +110,7 @@
 
 .CharacterHeadSpritesheet{
     animation: moveSpritesheet 4s steps(11) infinite;
-    width: calc(23% * var(--pixel-size2));
-    image-rendering: pixelated;
+    width: calc(4.7% * var(--pixel-size2));
 }
 
 .Injection {
@@ -121,7 +125,21 @@
 .InjectionSpritesheet{
     animation: moveSpritesheet 1s steps(15) infinite;
     width: calc(12.5% * var(--pixel-size3));
+}
+
+.ZombieToHuman{
+    position: absolute;
+    width: calc(0.1% * var(--pixel-size4));
+    height: calc(0.3% * var(--pixel-size4));
     image-rendering: pixelated;
+    right: 15%;
+    bottom: 20%;
+    overflow: hidden;
+}
+
+.ZombieToHumanSpritesheet{
+    animation: moveSpritesheet 6s steps(38) infinite;
+    width: calc(25% * var(--pixel-size4));
 }
 
 @keyframes moveSpritesheet {
