@@ -12,7 +12,7 @@
 
     <body>
             <!-- Main Menue-->
-            <div id="mainMenuHTML" style="display: none;">
+            <div id="mainMenuHTML">
 
             <div>
                 <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
@@ -36,7 +36,7 @@
             <img
             class="LevelButtonStyle"
             src="assets/Images/Buttons/Lvl1.png"
-            onclick="openNewPage('Level1','mainMenuHTML')";
+            onclick="openNewPage('Level1','mainMenuHTML'), Lvl1Victory()";
             onmouseout="src='assets/Images/Buttons/Lvl1.png'"
             onmouseover="src='assets/Images/Buttons/Lvl1MouseOver.png'"> 
 
@@ -192,9 +192,9 @@
 
 
             <!-- Level -->
-            <div>
+            <div id="Level1" style="display: none;">
 
-                <div id="Lvl1BackgroundDiv">
+                <div id="Lvl1BackgroundDiv" >
                     <img  src="assets/Images/Background/LVL1_Forest.png" alt="Lvl1BackgroundDiv" class="Lvl1Background">
                 </div>
 
@@ -213,6 +213,20 @@
 
             <div id="Level3" style="display: none;">
                 Level3
+            </div>
+
+            <div id="LevelVictory" style="display: none;">
+                
+                <div>
+                    <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
+                </div>
+
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/NextButton.png"
+                onclick="openNewPage('mainMenuHTML','LevelVictory')";
+                onmouseout="src='assets/Images/Buttons/NextButton.png'"
+                onmouseover="src='assets/Images/Buttons/NextButtonMouseOver.png'">
             </div>
             <!-- Level -->
 
