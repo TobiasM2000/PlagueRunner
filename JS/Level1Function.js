@@ -17,18 +17,37 @@ function jump(){
 var checkDead = setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(Character).getPropertyValue("top"));
     var zombieLeft = parseInt(window.getComputedStyle(Zombie).getPropertyValue("left"))
-    if(zombieLeft < 20 && zombieLeft > 0 && characterTop >= 130){
-        Zombie.style.animation = "none";
-        Zombie.style.display = "none";
+    if(zombieLeft < 30 && zombieLeft > 10 && characterTop >= 140){
+        isfailed = true;
         openNewPage('LevelFailed', 'Level1')
     }
 },10)
 
 
-function Lvl1Victory(){
+function Lvl1VictoryTimer(){
     timer = setTimeout(alertVictory, 29000);
 }
 
 function alertVictory(){
+    if(isfailed){
+        return
+    }
         openNewPage('LevelVictory', 'Level1')
 }
+
+
+var isfailed;
+function initializeLevel1(){
+    isfailed = false;
+}
+
+
+const red = document.querySelector('#Zombie');
+
+function changeAnimationTime() {
+  var animationDuration = Math.random() + 1.5;
+  console.log(animationDuration);
+  red.style.setProperty('--animation-time', animationDuration +'s');
+}
+
+setInterval(changeAnimationTime, 1000);
