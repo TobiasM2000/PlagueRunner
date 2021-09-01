@@ -20,13 +20,13 @@ var checkDead = setInterval(function(){
     if(zombieLeft < 20 && zombieLeft > 0 && characterTop >= 130){
         Zombie.style.animation = "none";
         Zombie.style.display = "none";
-        //openNewPage('mainMenuHTML', 'Level1')
+        openNewPage('LevelFailed', 'Level1')
     }
 },10)
 
 
 function Lvl1Victory(){
-    timer = setInterval(alertVictory, 29000);
+    timer = setTimeout(alertVictory, 29000);
 }
 
 function alertVictory(){

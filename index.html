@@ -216,15 +216,34 @@
             </div>
 
             <div id="LevelVictory" style="display: none;">
-                
+
                 <div>
                     <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
                 </div>
+
+                <h1 class="StoryText3">Level completed</h1>
+
 
                 <img 
                 class="OpenNewPageImgStyle"
                 src="assets/Images/Buttons/NextButton.png"
                 onclick="openNewPage('mainMenuHTML','LevelVictory')";
+                onmouseout="src='assets/Images/Buttons/NextButton.png'"
+                onmouseover="src='assets/Images/Buttons/NextButtonMouseOver.png'">
+            </div>
+
+            <div id="LevelFailed" style="display: none;">
+                
+                <div>
+                    <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
+                </div>
+
+                <h1 class="StoryText3">You Failed!</h1>
+
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/NextButton.png"
+                onclick="openNewPage('mainMenuHTML','LevelFailed')";
                 onmouseout="src='assets/Images/Buttons/NextButton.png'"
                 onmouseover="src='assets/Images/Buttons/NextButtonMouseOver.png'">
             </div>
