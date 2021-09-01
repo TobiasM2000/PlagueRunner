@@ -1,3 +1,8 @@
+function openNewPage(showpage, hidepage){
+    document.getElementById(showpage).style.display='block';
+    document.getElementById(hidepage).style.display='none';
+}
+
 var character = document.getElementById("Character");
 var zombie = document.getElementById("Zombie")
 function jump(){
@@ -15,6 +20,15 @@ var checkDead = setInterval(function(){
     if(zombieLeft < 20 && zombieLeft > 0 && characterTop >= 130){
         Zombie.style.animation = "none";
         Zombie.style.display = "none";
-        alert("LOOOOOSER NOOOB ")
+        openNewPage('LevelFailed', 'Level1')
     }
 },10)
+
+
+function Lvl1Victory(){
+    timer = setTimeout(alertVictory, 29000);
+}
+
+function alertVictory(){
+        openNewPage('LevelVictory', 'Level1')
+}

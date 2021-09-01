@@ -12,7 +12,7 @@
 
     <body>
             <!-- Main Menue-->
-            <div id="mainMenuHTML" style="display: none;">
+            <div id="mainMenuHTML">
 
             <div>
                 <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
@@ -36,7 +36,7 @@
             <img
             class="LevelButtonStyle"
             src="assets/Images/Buttons/Lvl1.png"
-            onclick="openNewPage('Level1','mainMenuHTML')";
+            onclick="openNewPage('Level1','mainMenuHTML'), Lvl1Victory()";
             onmouseout="src='assets/Images/Buttons/Lvl1.png'"
             onmouseover="src='assets/Images/Buttons/Lvl1MouseOver.png'"> 
 
@@ -192,9 +192,19 @@
 
 
             <!-- Level -->
-            <div id="Level1">
-                <div id="Character"></div>
-                <div id="Zombie"></div>
+            <div id="Level1" style="display: none;">
+
+                <div id="Lvl1BackgroundDiv" >
+                    <img  src="assets/Images/Background/LVL1_Forest.png" alt="Lvl1BackgroundDiv" class="Lvl1Background">
+                </div>
+
+                <div id="Character">
+                    <img class="MainCharacterMoveSpritesheet" alt="Character" src="assets/Animations/Character/Colerful/DriveRight.png">
+                </div>
+
+                <div id="Zombie">
+                    <img class="ZombieMoveSpritesheet" alt="Zombie" src="assets/Animations/Enemies/AniZombie.png">
+                </div>
             </div>
 
             <div id="Level2" style="display: none;">
@@ -203,6 +213,39 @@
 
             <div id="Level3" style="display: none;">
                 Level3
+            </div>
+
+            <div id="LevelVictory" style="display: none;">
+
+                <div>
+                    <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
+                </div>
+
+                <h1 class="StoryText3">Level completed</h1>
+
+
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/NextButton.png"
+                onclick="openNewPage('mainMenuHTML','LevelVictory')";
+                onmouseout="src='assets/Images/Buttons/NextButton.png'"
+                onmouseover="src='assets/Images/Buttons/NextButtonMouseOver.png'">
+            </div>
+
+            <div id="LevelFailed" style="display: none;">
+                
+                <div>
+                    <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
+                </div>
+
+                <h1 class="StoryText3">You Failed!</h1>
+
+                <img 
+                class="OpenNewPageImgStyle"
+                src="assets/Images/Buttons/NextButton.png"
+                onclick="openNewPage('mainMenuHTML','LevelFailed')";
+                onmouseout="src='assets/Images/Buttons/NextButton.png'"
+                onmouseover="src='assets/Images/Buttons/NextButtonMouseOver.png'">
             </div>
             <!-- Level -->
 
