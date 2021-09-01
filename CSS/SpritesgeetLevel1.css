@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --pixel-size: 120;
+    --pixel-size2: 250;
+    --animation-time: 2s
+}
 
 .Lvl1Background{
     width: 610%;
@@ -23,15 +28,6 @@
 
 @keyframes ZombieMovement{
     0%{right: 0%;}
-    10%{right: 10%;}
-    20%{right: 20%;}
-    30%{right: 30%;}
-    40%{right: 40%;}
-    50%{right: 50%;}
-    60%{right: 60%;}
-    70%{right: 70%;}
-    80%{right: 80%;}
-    90%{right: 90%;}
     100%{right: 100%;}
 }
 
@@ -42,11 +38,6 @@
     60%{bottom: 40%;}
     80%{bottom: 20%;}
     100%{bottom: 10%;}
-}
-
-:root{
-    --pixel-size: 120;
-    --pixel-size2: 250;
 }
 
 #Character{
@@ -71,7 +62,7 @@
     image-rendering: pixelated;
     overflow: hidden;
     bottom: 12%;
-    animation: ZombieMovement 2s infinite linear;
+    animation: ZombieMovement var(--animation-time) infinite linear;
 }
 
 .ZombieMoveSpritesheet{
