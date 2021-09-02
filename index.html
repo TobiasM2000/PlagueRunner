@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html onclick="jump()">
+<html onclick="jump(), jumpLvl2(), jumpLvl3()">
     <head>
 	    <meta charset="utf-8" />
 	    <title>Plague Runner</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
         <link rel="stylesheet" type="text/css" href="CSS/SpritesheetMain.css">
         <link rel="stylesheet" type="text/css" href="CSS/SpritesgeetLevel1.css">
+        <link rel="stylesheet" type="text/css" href="CSS/SpritesheetLevel2.css">
+        <link rel="stylesheet" type="text/css" href="CSS/SpritesheetLevel3.css">
         <script src="JS/MainPageFunctions.js"></script>   
         <script src="JS/Level1Function.js"></script>     
+        <script src="JS/Level2Functions.js"></script>     
+        <script src="JS/Level3Functions.js"></script>   
     </head>
 
     <body>
             <!-- Main Menue-->
-            <div id="mainMenuHTML" style="display: none;">
+            <div id="mainMenuHTML">
 
             <div>
                 <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
@@ -45,7 +49,7 @@
             <img
             class="LevelButtonStyle"
             src="assets/Images/Buttons/Lvl2.png"
-            onclick="openNewPage('Level2','mainMenuHTML')";
+            onclick="openNewPage('Level2','mainMenuHTML'),  Lvl2VictoryTimer(), initializeLevel2()";
             onmouseout="src='assets/Images/Buttons/Lvl2.png'"
             onmouseover="src='assets/Images/Buttons/Lvl2MouseOver.png'"> 
 
@@ -54,7 +58,7 @@
             <img
             class="LevelButtonStyle"
             src="assets/Images/Buttons/Lvl3.png"
-            onclick="openNewPage('Level3','mainMenuHTML')";
+            onclick="openNewPage('Level3','mainMenuHTML'), Lvl3VictoryTimer(), initializeLevel3()";
             onmouseout="src='assets/Images/Buttons/Lvl3.png'"
             onmouseover="src='assets/Images/Buttons/Lvl3MouseOver.png'"> 
 
@@ -161,7 +165,7 @@
                 onmouseover="src='assets/Images/Buttons/NextButtonMouseOver.png'">
             </div>
 
-            <div id="Story2_1">
+            <div id="Story2_1" style="display: none;">
 
                 <div>
                     <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
@@ -215,14 +219,39 @@
                 <div id="Zombie">
                     <img class="ZombieMoveSpritesheet" alt="Zombie" src="assets/Animations/Enemies/AniZombie.png">
                 </div>
+
             </div>
 
             <div id="Level2" style="display: none;">
-                Level2
+
+                <div id="Lvl2BackgroundDiv" >
+                    <img  src="assets/Images/Background/LVL2_City.png" alt="Lvl2BackgroundDiv" class="Lvl2Background">
+                </div>
+
+                <div id="CharacterLvl2">
+                    <img class="MainCharacterMoveSpritesheetLvl2" alt="CharacterLvl2" src="assets/Animations/Character/Colerful/DriveRight.png">
+                </div>
+
+                <div id="ZombieLvl2">
+                    <img class="ZombieMoveSpritesheetLvl2" alt="ZombieLvl2" src="assets/Animations/Enemies/AniZombie.png">
+                </div>
+
             </div>
 
             <div id="Level3" style="display: none;">
-                Level3
+
+                <div id="Lvl3BackgroundDiv" >
+                    <img  src="assets/Images/Background/LVL3_Labor.png" alt="Lvl3BackgroundDiv" class="Lvl3Background">
+                </div>
+
+                <div id="CharacterLvl3">
+                    <img class="MainCharacterMoveSpritesheetLvl3" alt="CharacterLvl3" src="assets/Animations/Character/Colerful/DriveRight.png">
+                </div>
+
+                <div id="ZombieLvl3">
+                    <img class="ZombieMoveSpritesheetLvl3" alt="ZombieLvl3" src="assets/Animations/Enemies/AniZombie.png">
+                </div>
+
             </div>
 
             <div id="LevelVictory" style="display: none;">

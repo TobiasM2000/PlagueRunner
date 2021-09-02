@@ -1,0 +1,77 @@
+:root{
+    --pixel-size: 120;
+    --pixel-size2: 250;
+    --animation-time: 2s
+}
+
+.Lvl2Background{
+    width: 610%;
+    image-rendering: pixelated;
+    animation: moveSpritesheet 35s steps(100000);
+}
+
+#Lvl2BackgroundDiv{
+    position: absolute;
+    image-rendering: pixelated;
+    height: 100%;
+    width: 100%;   
+    overflow: hidden;
+}
+
+.animateLvl2{
+    animation: jump 500ms;
+}
+
+@keyframes ZombieMovement{
+    0%{right: 0%;}
+    100%{right: 100%;}
+}
+
+@keyframes jump {
+    0%{bottom: 20%;}
+    20%{bottom: 40%;}
+    40%{bottom: 60%;}
+    60%{bottom: 40%;}
+    80%{bottom: 20%;}
+    100%{bottom: 10%;}
+}
+
+#CharacterLvl2{
+    position: absolute;
+    width: calc(0.15% * var(--pixel-size));
+    height: calc(0.4% * var(--pixel-size));
+    image-rendering: pixelated;
+    overflow: hidden;
+    bottom: 7%;
+}
+
+.MainCharacterMoveSpritesheetLvl2{
+    animation: moveSpritesheet 0.5s steps(2) infinite;
+    width: calc(2% * var(--pixel-size));
+    image-rendering: pixelated;
+}
+
+#ZombieLvl2{
+    position: absolute;
+    width: calc(0.05% * var(--pixel-size2));
+    height: calc(0.1% * var(--pixel-size2));
+    image-rendering: pixelated;
+    overflow: hidden;
+    bottom: 12%;
+    animation: ZombieMovement var(--animation-time) infinite linear;
+}
+
+.ZombieMoveSpritesheetLvl2{
+    animation: moveSpritesheet 2s steps(15) infinite;
+    width: calc(6% * var(--pixel-size2));
+    image-rendering: pixelated;
+}
+
+@keyframes moveSpritesheet {
+    from {
+        transform: translate3d(0px, 0, 0);
+    }
+    to{
+        transform: translate3d(-100%, 0, 0);
+    }
+}
