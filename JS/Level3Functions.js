@@ -1,7 +1,6 @@
 var characterLvl3 = document.getElementById("CharacterLvl3");
 var zombieLvl3 = document.getElementById("ZombieLvl3")
 function jumpLvl3(){
-    console.log("jump 3");
     if(CharacterLvl3.classList != "animateLvl3"){
         CharacterLvl3.classList.add("animateLvl3");
     }
@@ -11,12 +10,11 @@ function jumpLvl3(){
 }
 
 var checkDeadLvl3 = setInterval(function(){
-    console.log("check Hitbox 3");
     var characterTop = parseInt(window.getComputedStyle(CharacterLvl3).getPropertyValue("top"));
     var zombieLeft = parseInt(window.getComputedStyle(ZombieLvl3).getPropertyValue("left"))
     if(zombieLeft < 30 && zombieLeft > 10 && characterTop >= 140){
-        isfailedLvl3 = true;
-        openNewPage('LevelFailed', 'Level3')
+        //isfailedLvl3 = true;
+        //openNewPage('LevelFailed', 'Level3')
     }
 },2)
 

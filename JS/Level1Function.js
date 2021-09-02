@@ -6,8 +6,6 @@ function openNewPage(showpage, hidepage){
 var character = document.getElementById("Character");
 var zombie = document.getElementById("Zombie")
 function jump(){
-    console.log("jump 1");
-
     if(Character.classList != "animate"){
         Character.classList.add("animate");
     }
@@ -17,11 +15,11 @@ function jump(){
 }
 
 var checkDead = setInterval(function(){
-    console.log("check Hitbox 1");
-
     var characterTop = parseInt(window.getComputedStyle(Character).getPropertyValue("top"));
     var zombieLeft = parseInt(window.getComputedStyle(Zombie).getPropertyValue("left"))
     if(zombieLeft < 30 && zombieLeft > 10 && characterTop >= 140){
+        console.log("hier kommt sound");
+        playLoseSound();
         isfailed = true;
         openNewPage('LevelFailed', 'Level1')
     }
@@ -40,10 +38,15 @@ function alertVictory(){
 }
 
 
-var isfailed;
+var isfailed = false;
 function initializeLevel1(){
     isfailed = false;
 }
+
+function playLoseSound(){ 
+    document.getElementById('LoseSound').play();
+    document.getElementById('LoseSound').volume = 10;
+    }
 
 /*
 const red = document.querySelector('#Zombie');

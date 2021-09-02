@@ -15,6 +15,17 @@
     </head>
 
     <body>
+        <script>
+            
+function MenuSoundOn(){
+    console.log("hii");
+    document.getElementById('MenuSound').play();
+}
+
+function MenuSoundOff(){
+    document.getElementById('MenuSound').pause();
+}
+        </script>
             <!-- Main Menue-->
             <div id="mainMenuHTML">
 
@@ -31,7 +42,7 @@
             <img
             class="LevelButtonStyle"
             src="assets/Images/Buttons/StoryBegin.png"
-            onclick="openNewPage('Story1_1','mainMenuHTML')";
+            onclick="openNewPage('Story1_1','mainMenuHTML'), PlayLosingSound()";
             onmouseout="src='assets/Images/Buttons/StoryBegin.png'"
             onmouseover="src='assets/Images/Buttons/StoryBeginMouseOver.png'">
 
@@ -76,8 +87,7 @@
             <div class="MenuCharacter">
                 <img class="MenuCharacterSpritesheet" alt="MenuCharacter" src="assets/Animations/Character/Colerful/AniMenu.png">
             </div>
-
-
+            
             </div>
             <!-- End Main Menue-->
 
@@ -160,7 +170,7 @@
                 <img 
                 class="OpenNewPageImgStyle"
                 src="assets/Images/Buttons/NextButton.png"
-                onclick="openNewPage('mainMenuHTML','Story1_3')";
+                onclick="openNewPage('mainMenuHTML','Story1_3'), MenuSoundOn()";
                 onmouseout="src='assets/Images/Buttons/NextButton.png'"
                 onmouseover="src='assets/Images/Buttons/NextButtonMouseOver.png'">
             </div>
@@ -288,5 +298,17 @@
             </div>
             <!-- Level -->
 
+            <!-- Audofiles -->
+
+            <audio id="LoseSound" preload="auto">
+                <source src="assets/GameSound/LoseingTheGame.mp3">
+            </audio>
+            <audio id="VictorySound" preload="auto">
+                <source src="assets/GameSound/LVL-Completet.mp3">
+            </audio>
+            <audio id="MenuSound" preload="auto" loop>
+                <source src="assets/GameSound/Menu.mp3">
+            </audio>
+        
     </body>
 </html>

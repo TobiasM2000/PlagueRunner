@@ -9,7 +9,7 @@
 }
 
 .Lvl1Background{
-    width: 610%;
+    width: 565%;
     image-rendering: pixelated;
     animation: moveSpritesheet 35s steps(100000);
 }
