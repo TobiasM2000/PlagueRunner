@@ -19,7 +19,7 @@ var checkDead = setInterval(function(){
     var zombieLeft = parseInt(window.getComputedStyle(Zombie).getPropertyValue("left"))
     if(zombieLeft < 30 && zombieLeft > 10 && characterTop >= 140){
         console.log("hier kommt sound");
-        playLoseSound();
+        PlayLoseSound();
         isfailed = true;
         openNewPage('LevelFailed', 'Level1')
     }
@@ -34,6 +34,7 @@ function alertVictory(){
     if(isfailed){
         return
     }
+        PlayVictorySound();
         openNewPage('LevelVictory', 'Level1')
 }
 
@@ -43,10 +44,13 @@ function initializeLevel1(){
     isfailed = false;
 }
 
-function playLoseSound(){ 
+function PlayLoseSound(){ 
     document.getElementById('LoseSound').play();
-    document.getElementById('LoseSound').volume = 10;
-    }
+}
+
+function PlayVictorySound(){ 
+    document.getElementById('VictorySound').play();
+}
 
 /*
 const red = document.querySelector('#Zombie');
