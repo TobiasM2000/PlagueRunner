@@ -6,6 +6,8 @@ function openNewPage(showpage, hidepage){
 var character = document.getElementById("Character");
 var zombie = document.getElementById("Zombie")
 function jump(){
+    console.log("jump 1");
+
     if(Character.classList != "animate"){
         Character.classList.add("animate");
     }
@@ -15,13 +17,15 @@ function jump(){
 }
 
 var checkDead = setInterval(function(){
+    console.log("check Hitbox 1");
+
     var characterTop = parseInt(window.getComputedStyle(Character).getPropertyValue("top"));
     var zombieLeft = parseInt(window.getComputedStyle(Zombie).getPropertyValue("left"))
     if(zombieLeft < 30 && zombieLeft > 10 && characterTop >= 140){
         isfailed = true;
         openNewPage('LevelFailed', 'Level1')
     }
-},10)
+},2)
 
 
 function Lvl1VictoryTimer(){
@@ -41,13 +45,13 @@ function initializeLevel1(){
     isfailed = false;
 }
 
-
+/*
 const red = document.querySelector('#Zombie');
 
 function changeAnimationTime() {
   var animationDuration = Math.random() + 1.5;
-  console.log(animationDuration);
   red.style.setProperty('--animation-time', animationDuration +'s');
 }
 
 setInterval(changeAnimationTime, 1000);
+*/
