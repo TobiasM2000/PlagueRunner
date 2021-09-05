@@ -2,6 +2,9 @@
 
 ## Inhaltsverzeichnis
 
+- [Was ist PlagurRunner](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#was-ist-plaguerunner)
+- [Das Spiel](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Das-Spiel)
+- [Projektentwicklung](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Projektentwicklung)
 
 ## Was ist PlagueRunner?
 
