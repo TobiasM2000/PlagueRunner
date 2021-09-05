@@ -5,6 +5,7 @@
 - [Was ist PlagurRunner](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#was-ist-plaguerunner)
 - [Das Spiel](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Das-Spiel)
 - [Projektentwicklung](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Projektentwicklung)
+- [Technologien](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Technologien)
 
 ## Was ist PlagueRunner?
 
@@ -47,3 +48,8 @@ Genauere Infos zur Aufgabenaufteilung sind im [Project Board](https://github.com
 4) [create Level 1-3](https://github.com/TobiasM2000/PlagueRunner/milestone/3)
 5) [UI Design & Sound](https://github.com/TobiasM2000/PlagueRunner/milestone/4)
 6) [Development and Testing](https://github.com/TobiasM2000/PlagueRunner/milestone/6)
+
+## Technologien
+
+Coding:  
+  - [Visual Studio Code](https://code.visualstudio.com/)
