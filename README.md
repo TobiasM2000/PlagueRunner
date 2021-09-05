@@ -6,12 +6,13 @@
 - [Das Spiel](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Das-Spiel)
 - [Projektentwicklung](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Projektentwicklung)
 - [Technologien](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Technologien)
+- [Bugs](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Bugs)
 
 ## Was ist PlagueRunner?
 
 PlagueRunner ist ein gestaltetes Retro-Jump Game, welches in drei Level aufgebaut ist. Die kleine Geschichte des Spiels ist humorvoll aufgebaut und soll zudem auf die schwache Corona-Politik aufmerksam machen. Das Gefühl, ständig im eigenem Haus gefangen zu sein und sich von Lockdown zu Lockdown zu hangeln um dem Killervirus auszusitzen :), wird hier als Storyline verwändet. 
 
-Das Spiel wurde von drei Studenten aus der [FHDW Bergisch Gladbach](https://www.fhdw.de/de/fhdw/campusse/bergisch-gladbach.html), in Html, Java-Script und css entwickelt.
+Das Spiel wurde von drei Studenten aus der [FHDW Bergisch Gladbach](https://www.fhdw.de/de/fhdw/campusse/bergisch-gladbach.html), in Html, Java-Script und css entwickelt und wurde am 8. September in der Version 1.0.0 veröffentlicht.
 
 ![grafik](https://user-images.githubusercontent.com/82139406/132130266-128144a1-e151-43a9-ade1-e70a1b75070e.png)
 
@@ -51,5 +52,13 @@ Genauere Infos zur Aufgabenaufteilung sind im [Project Board](https://github.com
 
 ## Technologien
 
-Coding:  
+### Coding:  
   - [Visual Studio Code](https://code.visualstudio.com/)
+
+### Systemvoraussetzungen 
+  - ein geeigneter Webbrowser: Google Chrome, Firefox, Microsoft Edge, Opera
+  - info: Wir haben mit Firefox entwickelt
+  
+## Bugs
+
+- Wir haben mit der Auflösung 1920 zu 1080 entwickelt, wodurch es bei geringeren Auflösungen zu unproportionalen Verhältnissen kommt
