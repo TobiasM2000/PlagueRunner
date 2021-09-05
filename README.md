@@ -1,6 +1,6 @@
 # PlagueRunner
 
-## Was ist PlagurRunner?
+## Was ist PlagueRunner?
 
 PlagueRunner ist ein gestaltetes Retro-Jump Game, welches in drei Level aufgebaut ist. Die kleine Geschichte des Spiels ist humorvoll aufgebaut und soll zudem auf die schwache Corona-Politik aufmerksam machen. Das Spiel wurde von drei Studenten aus der FHDW, in den sprachen Html, Java-Script und css entwickelt.
 
