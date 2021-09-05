@@ -10,7 +10,7 @@ PlagueRunner startet erstmal mit einer kleinen Geschichte, die wir im Readme euc
 
 ### Level
 
-Jedes Level ist mit seiner eigenen Tematik aufgebaut. Die Ziele der Level sind es an der vorgebenen Ort zu kommen, ohne von den Zombies erwischt zu werden. Den Zombies kann man ausweischen, indem man in die höhe springt, das mit einem klick der Maus auf den Bildschirm möglich ist.
+Jedes Level ist mit seiner eigenen Thematik aufgebaut. Die Ziele der Level sind es an der vorgebenen Ort zu kommen, ohne von den Zombies erwischt zu werden. Den Zombies kann man ausweischen, indem man in die höhe springt, das mit einem klick der Maus auf den Bildschirm möglich ist.
 
 ## Aufgabenaufteilung
 
