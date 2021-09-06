@@ -29,7 +29,7 @@ Sie müssen den Roboter, Covid-Killer, auf eine gefährliche Reise schicken, um 
 
 ### Level
 
-Jedes Level ist mit seiner eigenen Thematik aufgebaut. Die Ziele der Level sind es an der vorgebenen Ort zu kommen, ohne von den Zombies erwischt zu werden. Den Zombies kann man ausweischen, indem man in die höhe springt, das mit einem klick der Maus auf den Bildschirm möglich ist. Die GEschichte startet mit dem ersten Level im Wald und schwingt sich durch die Stadt in das Labor, wo man den Virus bekämpfen kann.
+Jedes Level ist mit seiner eigenen Thematik aufgebaut. Die Ziele der Level sind es an der vorgebenen Ort zu kommen, ohne von den Zombies erwischt zu werden. Den Zombies kann man ausweischen, indem man in die höhe springt, das mit einem klick der Maus auf den Bildschirm möglich ist. Die Geschichte startet mit dem ersten Level im Wald und schwingt sich durch die Stadt in das Labor, wo man den Virus bekämpfen kann.
 
 ## Projektentwicklung
 
@@ -37,7 +37,7 @@ Jedes Level ist mit seiner eigenen Thematik aufgebaut. Die Ziele der Level sind 
 
 <img src="https://raw.githubusercontent.com/TobiasM2000/PlagueRunner/main/Library/WIP.png" width="100%" height="100%">
 
-Das Bild zeigt eine genaue Aufgabenaufteilung der Gruppe. Einfach gesagt, ist die Code-Entwicklung von [Leo Ecker](https://github.com/Lurons) und [Tobias Meißner](https://github.com/TobiasM2000) erfolgt, wärend [Andre Wayer](https://github.com/AMPW-epco) das Game Design gemacht hat.
+Das Bild zeigt eine genaue Aufgabenaufteilung der Gruppe. Einfach gesagt, ist die Code-Entwicklung von [Leo Ecker](https://github.com/Lurons) und [Tobias Meißner](https://github.com/TobiasM2000) erfolgt, wärend [Andre Weyer](https://github.com/AMPW-epco) das Game Design gemacht hat.
 
 Genauere Infos zur Aufgabenaufteilung sind im [Project Board](https://github.com/TobiasM2000/PlagueRunner/projects/1) zu finden
 
