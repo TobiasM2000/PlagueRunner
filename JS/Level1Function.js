@@ -35,6 +35,7 @@ function alertVictory(){
         return
     }
         PlayVictorySound();
+        isLevel2Unlocked = true;
         openNewPage('LevelVictory', 'Level1')
 }
 

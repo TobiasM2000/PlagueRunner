@@ -29,6 +29,7 @@ function alertVictoryLvl3(){
         return
     }
         PlayVictorySound()
+        isEndStoryUnlocked = true;
         openNewPage('LevelVictory', 'Level3')
 }
 
