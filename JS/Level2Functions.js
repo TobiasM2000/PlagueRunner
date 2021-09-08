@@ -13,10 +13,9 @@ var checkDeadLvl2 = setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(CharacterLvl2).getPropertyValue("top"));
     var zombieLeft = parseInt(window.getComputedStyle(ZombieLvl2).getPropertyValue("left"))
     if(zombieLeft < 30 && zombieLeft > 10 && characterTop >= 140){
-        console.log("hier kommt sound");
-        PlayLoseSound();
-        isfailedLvl2 = true;
-        openNewPage('LevelFailed', 'Level2')
+        //PlayLoseSound();
+        //isfailedLvl2 = true;
+        //openNewPage('LevelFailed', 'Level2')
     }
 },2)
 
