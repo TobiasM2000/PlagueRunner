@@ -8,25 +8,46 @@
         <link rel="stylesheet" type="text/css" href="CSS/SpritesgeetLevel1.css">
         <link rel="stylesheet" type="text/css" href="CSS/SpritesheetLevel2.css">
         <link rel="stylesheet" type="text/css" href="CSS/SpritesheetLevel3.css">
-        <script src="JS/MainPageFunctions.js"></script>   
-        <script src="JS/Level1Function.js"></script>     
-        <script src="JS/Level2Functions.js"></script>     
-        <script src="JS/Level3Functions.js"></script>   
+        <script src="JS/MainPageFunctions.js"></script>
+        <script src="JS/Level1Function.js"></script>
+        <script src="JS/Level2Functions.js"></script>
+        <script src="JS/Level3Functions.js"></script>
     </head>
-
     <body>
-        <script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var checkbox = document.querySelector('input[type="checkbox"]');
+
+  checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+      SoundOff();
+      console.log('Checked');
+    } else {
+      SoundOn();
+      console.log('Not checked');
+    }
+  });
+});
+
 var mute = false;
             
 function MenuSoundOn(){
     if(mute)
         return;
-    console.log("hii");
+    document.getElementById('MenuSound').play();
+}
+
+function SoundOn(){
+    mute = false;
     document.getElementById('MenuSound').play();
 }
 
 function MenuSoundOff(){
-    console.log("Sound aus");
+    document.getElementById('MenuSound').pause();
+}
+
+function SoundOff(){
+    mute = true;
     document.getElementById('MenuSound').pause();
 }
 
@@ -139,15 +160,17 @@ function EndStorySoundOff(){
             <div>
                 <img
                 class="MuteButton"
-                src="assets/Images/Symbols/MusikBigOn.png"
-                onmouseout="src='assets/Images/Symbols/MusikBigOff.png'"
-                onclick="mute = true, MenuSoundOff()"> 
+                src="assets/Images/Symbols/MusikBigOff.png"> 
     
+                  
+                  <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider"></div>
+                  </label>
+
                 <img
                 class="SoundsButton"
-                src="assets/Images/Symbols/MusikBigOn.png"
-                onmouseout="src='assets/Images/Symbols/MusikBigOn.png'"
-                onclick="mute = false, MenuSoundon()"> 
+                src="assets/Images/Symbols/MusikBigOn.png"> 
             </div>
             <!-- End Template -->
 
@@ -182,7 +205,7 @@ function EndStorySoundOff(){
                     <img src="assets/Images/Background/MenuBG.png" class="MainMenuBackground">
                 </div>
 
-                <h1 class="StoryText">Sie müssen den Roboter, Covid-Killer, auf eine gefährliche Reise schicken, um in der zuletzt
+                <h1 class="StoryText">Du musst den Roboter, Covid-Killer, auf eine gefährliche Reise schicken, um in der zuletzt
                     gefallenen Großstadt die Formel für das Heilmittel gegen den Zombie-Virus (Covid-25) zu finden, 
                     um mit der Herstellung die Menschheit zu retten.</h1>
 
@@ -364,6 +387,6 @@ function EndStorySoundOff(){
             </audio>
             <audio id="EndStorySound" preload="auto" loop>
                 <source src="assets/GameSound/StoryEnd.mp3">
-            </audio>
+            </audio> 
     </body>
 </html>
