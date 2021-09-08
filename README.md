@@ -2,11 +2,11 @@
 
 ## Inhaltsverzeichnis
 
-- [Was ist PlagueRunner](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#was-ist-plaguerunner)
-- [Das Spiel](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Das-Spiel)
-- [Projektentwicklung](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Projektentwicklung)
-- [Technologien](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Technologien)
-- [Bugs](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Bugs)
+- [Was ist PlagueRunner](https://github.com/TobiasM2000/PlagueRunner#was-ist-plaguerunner)
+- [Das Spiel](https://github.com/TobiasM2000/PlagueRunner#Das-Spiel)
+- [Projektentwicklung](https://github.com/TobiasM2000/PlagueRunner#Projektentwicklung)
+- [Technologien](https://github.com/TobiasM2000/PlagueRunner#Technologien)
+- [Bugs](https://github.com/TobiasM2000/PlagueRunner#Bugs)
 
 ## Was ist PlagueRunner?
 
