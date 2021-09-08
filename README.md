@@ -2,19 +2,21 @@
 
 ## Inhaltsverzeichnis
 
-- [Was ist PlagurRunner](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#was-ist-plaguerunner)
-- [Das Spiel](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Das-Spiel)
-- [Projektentwicklung](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Projektentwicklung)
-- [Technologien](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Technologien)
-- [Bugs](https://github.com/TobiasM2000/PlagueRunner/blob/ReadMe-Update/README.md#Bugs)
+- [Was ist PlagueRunner](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#was-ist-plaguerunner)
+- [Das Spiel](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Das-Spiel)
+- [Projektentwicklung](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Projektentwicklung)
+- [Technologien](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Technologien)
+- [Bugs](https://github.com/TobiasM2000/PlagueRunner/blob/README.md#Bugs)
 
 ## Was ist PlagueRunner?
 
-PlagueRunner ist ein gestaltetes Retro-Jump Game, welches in drei Level aufgebaut ist. Die kleine Geschichte des Spiels ist humorvoll aufgebaut und soll zudem auf die schwache Corona-Politik aufmerksam machen. Das Gefühl, ständig im eigenem Haus gefangen zu sein und sich von Lockdown zu Lockdown zu hangeln um dem Killervirus auszusitzen :), wird hier als Storyline verwändet. 
+PlagueRunner ist ein gestaltetes Retro-Jump Game, welches in drei Level aufgebaut ist. Die kleine Geschichte des Spiels ist humorvoll aufgebaut und soll zudem auf die schwache Corona-Politik aufmerksam machen. Das Gefühl, ständig im eigenem Haus gefangen zu sein und sich von Lockdown zu Lockdown zu hangeln um dem Killervirus auszusitzen :), wird hier als Storyline verwendet. 
 
-Das Spiel wurde von drei Studenten aus der [FHDW Bergisch Gladbach](https://www.fhdw.de/de/fhdw/campusse/bergisch-gladbach.html), in Html, Java-Script und css entwickelt und wurde am 8. September in der Version 1.0.0 veröffentlicht.
+Das Spiel wurde von drei Studenten aus der [FHDW Bergisch Gladbach](https://www.fhdw.de/de/fhdw/campusse/bergisch-gladbach.html), in HTML, JavaScript und CSS entwickelt und wurde am 8. September in der Version 1.0.0 veröffentlicht.
 
-![grafik](https://user-images.githubusercontent.com/82139406/132130266-128144a1-e151-43a9-ade1-e70a1b75070e.png)
+![image](https://user-images.githubusercontent.com/76622670/132486381-ad06f5c7-ba03-4737-8a01-076574afe59a.png)
+
+
 
 ## Das Spiel
 
@@ -23,9 +25,9 @@ PlagueRunner startet erstmal mit einer kleinen Geschichte.
 
 Nachdem sich der Corona-Virus (Covid-19) 2071 in den Zombie-Virus (Covid-25) weiterentwickelt hat und mittlerweile bei Infektion die Kontrolle über das Lebewesen erlangt, bleibt der Menschheit nur noch eine letzte Hoffnung…
 
-Sie müssen den Roboter, Covid-Killer, auf eine gefährliche Reise schicken, um in der zuletzt gefallenen Großstadt die Formel für das Heilmittel gegen den Zombie-Virus (Covid-25) zu finden, um mit der Herstellung die Menschheit zu retten.
+Du musst den Roboter, Covid-Killer, auf eine gefährliche Reise schicken, um in der zuletzt gefallenen Großstadt die Formel für das Heilmittel gegen den Zombie-Virus (Covid-25) zu finden, um mit der Herstellung die Menschheit zu retten.
 
-...es liegt nun an dir, wie die Geschichte Ausgeht
+...es liegt nun an dir, wie die Geschichte ausgeht!
 
 ### Level
 
@@ -52,12 +54,47 @@ Genauere Infos zur Aufgabenaufteilung sind im [Project Board](https://github.com
 
 ## Technologien
 
+### Lizensen
+- [Piskelapp](https://www.piskelapp.com/)
+
+![image](https://user-images.githubusercontent.com/76622670/132484034-ffc22b0b-087e-4ba1-b302-0d9fffed88e8.png)
+
+- [Mixkit](https://mixkit.co/)
+
+![image](https://user-images.githubusercontent.com/76622670/132483173-ad903531-e2b8-4358-924c-81f2ac05a28b.png)
+
+- [Freesound](https://freesound.org/):
+
+"mixkit-arcade-game-opener-222" by  ( https://mixkit.co/https://assets.mixkit.co/sfx/download/mixkit-arcade-game-opener-222.wav ) licensed under CCBYNC 3.0
+
+"mixkit-medieval-show-fanfare-announcement-226" ( https://mixkit.co/https://assets.mixkit.co/sfx/download/mixkit-medieval-show-fanfare-announcement-226.wav ) licensed under CCBYNC 3.0
+
+"mixkit-player-losing-or-failing-2042"( https://mixkit.co/https://assets.mixkit.co/sfx/download/mixkit-player-losing-or-failing-2042.wav ) licensed under CCBYNC 3.0
+
+"mixkit-game-level-completed-2059"( https://mixkit.co/https://assets.mixkit.co/sfx/download/mixkit-game-level-completed-2059.wav ) licensed under CCBYNC 3.0
+
+"mixkit-retro-arcade-emergency-alarm-2972"( https://mixkit.co/https://assets.mixkit.co/sfx/download/mixkit-retro-arcade-emergency-alarm-2972.wav ) licensed under CCBYNC 3.0
+
+"585479__klankbeeld__heath-landscape-nl-821pm-210711-0301"( https://mixkit.co/https://assets.mixkit.co/sfx/download/585479__klankbeeld__heath-landscape-nl-821pm-210711-0301.wav ) licensed under CCBYNC 3.0
+
+"240233__habbis92__piccadilly-circus-ambience"( https://mixkit.co/https://assets.mixkit.co/sfx/download/240233__habbis92__piccadilly-circus-ambience.wav ) licensed under CCBYNC 3.0
+
+"536602__kvgarlic__labor-day-woods-lake-soundscape-sept-6-2020"( https://mixkit.co/https://assets.mixkit.co/sfx/download/536602__kvgarlic__labor-day-woods-lake-soundscape-sept-6-2020.wav ) licensed under CCBYNC 3.0
+
+"118324__mzoern1__labor-outdoors"( https://mixkit.co/https://assets.mixkit.co/sfx/download/118324__mzoern1__labor-outdoors.wav ) licensed under CCBYNC 3.0
+
+
+- [online-audio-converter](https://online-audio-converter.com/)
+- https://online-audio-converter.com/pricing
+
+
+
 ### Coding:  
   - [Visual Studio Code](https://code.visualstudio.com/)
 
 ### Systemvoraussetzungen 
-  - ein geeigneter Webbrowser: Google Chrome, Firefox, Microsoft Edge, Opera
-  - info: Wir haben mit Firefox entwickelt
+  - ein geeigneter Webbrowser: Google Chrome und Firefox
+  - Info: Wir haben mit  Google Chrome und Firefox entwickelt & getestet
   
 ## Bugs
 
