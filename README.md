@@ -98,4 +98,5 @@ Genauere Infos zur Aufgabenaufteilung sind im [Project Board](https://github.com
   
 ## Bugs
 
-- Wir haben mit der Auflösung 1920 zu 1080 entwickelt, wodurch es bei geringeren Auflösungen zu unproportionalen Verhältnissen kommt
+- Wir haben mit der Auflösung 1920 zu 1080 entwickelt, wodurch es bei abweichenden Auflösungen zu unproportionalen Verhältnissen kommt
+- Bei mehrfachen schnell aufeinander folgenden Level Neustats wird das selbe Level vorzeitig beendet
